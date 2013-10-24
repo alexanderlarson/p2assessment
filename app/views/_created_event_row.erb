@@ -1,0 +1,9 @@
+ <tr>
+    <td> 
+       Events Created: <a href="/event/<%= event.id %>"><%= event.name %></a>
+    </td>
+    <td>
+      ~on <%= event.created_at.strftime("%d, %b %Y") %>
+      <a href="/event/edit/<%= event.id %>">Edit | </a><span><a href="/event/delete/<%= event.id %>">Delete</a><br>
+    </td>
+ </tr>

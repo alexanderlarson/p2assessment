@@ -1,0 +1,11 @@
+<div class="navigate">
+	<ul>
+		<li><a href='/'>Events Manager</a></li>
+		<% if current_user %>
+		<li><a href ='/newevent'>Submit new Event</a></li>
+		<li><a href ='/logout'>Logout</a></li>
+		<% else %>
+		<li><a href = '/login'>Login</a></li>
+		<% end %>
+	</ul>
+</div>

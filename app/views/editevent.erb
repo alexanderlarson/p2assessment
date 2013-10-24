@@ -1,0 +1,15 @@
+
+	<h2>Edit properties for: <%= @event.name %></h2>
+	
+	<form action="/event/edit" method="POST" id='edit'>
+
+		<label>Name<input type="text" name="event[name]" placeholder="<%= @event.try(:name) %>" value="<%= @event.try(:name) %>" label="name"><br></label><br>
+
+		<label>Location<input type="text" name="event[location]" placeholder="<%= @event.try(:location) %>" value="<%= @event.try(:location) %>" label="name"<br></label><br>
+
+		<label>Starts At:<input type="date" name="event[starts_at]" placeholder="<%= @event.try(:starts_at) %>" value="<%= @event.try(:starts_at) %>" label="name"<br></label><br>
+
+		<label>Ends At:<input type="date" name="event[ends_at]" placeholder="<%= @event.try(:ends_at) %>" value="<%= @event.try(:ends_at) %>" label="name"<br></label><br>
+
+		<input type="submit" value="Edit this event">
+	</form>

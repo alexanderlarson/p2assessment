@@ -1,0 +1,10 @@
+<h1><%= @event.name %></a></h1>
+
+<table>  
+  <%= @event.location%><br>
+   <tr>
+      <td>
+        <%= @event.starts_at.strftime("%l:%M - %a, %b %Y") %> to: <%= @event.ends_at.strftime("%l:%M - %a, %b %Y") %>
+      </td>
+   </tr>  
+</table>
